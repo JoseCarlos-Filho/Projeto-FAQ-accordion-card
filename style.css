@@ -1,1 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kumbh Sans';
+}
 
+body {
+    height: 100vh;
+    width: 100%;
+
+    background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+main {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.box_white {
+    height: 400px;
+
+    width: 370px;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    margin-top: 120px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.imagens {
+
+    display: flex;
+    
+    flex-direction: column;
+
+    /* position: absolute; 
+    
+    width: 200px;
+    
+    height: 200px;
+
+    margin: 0px 0px 400px 0px; */
+
+}
+
+.img_top {
+    position: absolute;
+    
+    width: 200px;
+
+    height: 200px;
+
+    margin: 0px 0px 500px 0px;
+
+   
+
+}
