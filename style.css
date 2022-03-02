@@ -18,14 +18,16 @@ main {
 
     justify-content: center;
 
+    flex-wrap: wrap;
+
 }
 
 .box_white {
-    height: 400px;
+    height: 500px;
 
-    width: 370px;
+    width: 800px;
 
-    border-radius: 10px;
+    border-radius: 20px;
 
     background-color: white;
 
@@ -35,36 +37,137 @@ main {
 
     align-items: center;
 
-    justify-content: center;
+    justify-content: space-around;
 
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.imagens {
+ .imagens {
 
     display: flex;
+
+    flex-wrap: wrap;
     
     flex-direction: column;
 
-    /* position: absolute; 
-    
-    width: 200px;
-    
-    height: 200px;
-
-    margin: 0px 0px 400px 0px; */
-
-}
+} 
 
 .img_top {
     position: absolute;
+
+    z-index: 1;
+
+    margin: -560px 0px 0px 0px;
+
+    left: -280px;
     
-    width: 200px;
+    width: 985px;
 
-    height: 200px;
+    height: 985px;
+}
 
-    margin: 0px 0px 500px 0px;
+.img_mid {
+    position: absolute;
 
-   
+    z-index: 2;
 
+    margin: -200px 0px 0px 0px;
+
+    left: 290px;
+    
+    width: 400px;
+    
+    height: 400px;
+}
+
+.img_end {
+    position: absolute;
+
+    z-index: 1;
+
+    margin: -5px 0px 0px 0px;
+
+    left: -279px;
+    
+    width: 981px;
+
+    height: 440px;
+}
+
+.info {
+    margin-left: 150px;
+}
+
+h1 {
+    text-align: left;
+    margin: -10px 0px 0px 0px;   
+}
+
+details {
+    margin: 25px 0px 0px 0px;
+}
+
+details > summary {
+    list-style: none;
+}
+
+summary::marker {
+    display: none;
+}
+
+summary::after {
+    content: url(./images/icon-arrow-down.svg);
+    position: absolute;
+    right: 30%;
+}
+
+details[open] summary::after {
+    content: url(./images/icon-arrow-down.svg);
+    
+    transform: rotate(180deg);
+}
+
+details > summary {
+
+    padding: 4px;
+
+    font-weight: bold;
+
+    width: 300px;
+
+    font-size: 12px;
+
+    text-align: left;
+
+    color: hsl(237, 12%, 33%);
+    
+}
+
+details > p {
+    color: hsl(240, 6%, 50%);
+
+    text-align: left;
+
+    padding: 4px;
+
+    width: 250px;
+
+    font-size: 12px;
+}
+
+hr {
+    margin: 5px;
+
+    width: 300px;
+
+    background-color: hsl(237, 12%, 33%);
+}
+
+@media (max-width: 1200px) {
+
+    summary::after {
+        content: url(./images/icon-arrow-down.svg);
+        position: absolute;
+        right: 30%;
+    }
 }
