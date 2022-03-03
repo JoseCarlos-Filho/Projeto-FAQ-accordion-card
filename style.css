@@ -163,11 +163,59 @@ hr {
     background-color: hsl(237, 12%, 33%);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
+
+    .box_white {
+
+        width: 375px;
+
+        justify-content: center;
+
+    }
+
+    .img_top {
+
+        display: none;
+    }
+
+
+    h1 {
+        text-align: center;
+        margin-left: -50%;
+    }
+
+    .img_mid {
+
+        height: 30%;
+        width: 30%;
+
+        left: 35%; 
+        top: 29%;  
+        
+    }
+
+    .img_end {
+
+        height: 15%;
+        width: 20%;
+
+        left: 40%;
+        top: 20%;
+    }
+
+    details {
+        margin-left: -10%;
+    }
 
     summary::after {
-        content: url(./images/icon-arrow-down.svg);
-        position: absolute;
-        right: 30%;
+        right: 39%;
     }
+
+    hr {
+        margin-left: -23.5%;
+    }
+
+   
+    
+   
 }
