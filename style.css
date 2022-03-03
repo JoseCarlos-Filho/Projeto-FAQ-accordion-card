@@ -184,14 +184,12 @@ hr {
         margin-left: -50%;
     }
 
-    .img_mid {
-
+    .img_mid {    
         height: 30%;
         width: 30%;
 
         left: 35%; 
-        top: 29%;  
-        
+        top: 32%;
     }
 
     .img_end {
@@ -200,7 +198,7 @@ hr {
         width: 20%;
 
         left: 40%;
-        top: 20%;
+        top: 21.5%;
     }
 
     details {
@@ -214,8 +212,100 @@ hr {
     hr {
         margin-left: -23.5%;
     }
+}
 
-   
-    
-   
+@media (max-width: 1100px) {
+
+    .img_mid {    
+        height: 30%;
+        width: 30%;
+
+        left: 35%; 
+        top: 32%;
+    }
+
+    .img_end {
+
+        height: 15%;
+        width: 25%;
+
+        left: 38%;
+        top: 21.5%;
+    }
+
+    summary::after {
+        right: 35%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .img_mid {
+        height: 30%;
+        width: 30%;
+
+        left: 35%; 
+        top: 32.5%;
+
+    }
+
+    .img_end {
+
+        height: 15%;
+        width: 25%;
+
+        left: 38%;
+        top: 21.5%;
+    }
+
+    summary::after {
+        right: 34%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .img_end {
+
+        height: 14%;
+        width: 30%;
+
+        left: 34%;
+        top: 19%;
+    }
+
+    summary::after {
+        right: 30%;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+   .box_white {
+       margin-left: 11.5%;
+   }
+
+    .img_mid {
+        height: 60%;
+        width: 60%;
+
+        left: 26.5%; 
+        top: 15%;
+
+    }
+
+    .img_end {
+
+        height: 15%;
+        width: 60%;
+
+        left: 25%;
+        top: 19%;
+    }
+
+    summary::after {
+        right: 5%;
+    }
+
 }
