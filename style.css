@@ -163,6 +163,16 @@ hr {
     background-color: hsl(237, 12%, 33%);
 }
 
+@media (max-width: 1700px) {
+
+    summary::after {
+        right: 32%;
+    }
+
+}
+
+
+
 @media (max-width: 1400px) {
 
     .box_white {
@@ -252,10 +262,10 @@ hr {
     .img_end {
 
         height: 15%;
-        width: 25%;
+        width: 28%;
 
-        left: 38%;
-        top: 21.5%;
+        left: 36%;
+        top: 23%;
     }
 
     summary::after {
@@ -267,16 +277,43 @@ hr {
 
     .img_end {
 
-        height: 14%;
+        height: 13%;
         width: 30%;
 
         left: 34%;
-        top: 19%;
+        top: 23%;
     }
 
     summary::after {
         right: 30%;
     }
+
+}
+
+@media (max-width: 600px) {
+
+    .img_mid {
+        height: 30%;
+        width: 30%;
+
+        left: 35%; 
+        top: 32.5%;
+
+    }
+
+    .img_end {
+
+        height: 12%;
+        width: 32%;
+
+        left: 34%;
+        top: 22%;
+    }
+
+    summary::after {
+        right: 26%;
+    }
+ 
 
 }
 
