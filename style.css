@@ -21,6 +21,19 @@ main {
 
     flex-wrap: wrap;
 
+    position: relative;
+
+    top: 0px;
+}
+
+.img_box {
+    position: absolute;
+
+    z-index: 3;
+
+    left: 17.5%;
+
+    top: 52%;
 }
 
 .box_white {
@@ -47,6 +60,7 @@ main {
     justify-content: space-around;
 
     flex-wrap: wrap;
+
 }
 
  .imagens {
@@ -175,11 +189,24 @@ hr {
         right: 30%;
     }
 
+    .img_box {
+        position: absolute;
+
+        top: 52%;
+
+        margin: 0 auto;
+        
+    }
+
 }
 
 
 
 @media (max-width: 1400px) {
+
+    .img_box {
+        display: none;
+    }
 
     .box_white {
         position: relative;
